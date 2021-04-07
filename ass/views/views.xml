@@ -58,7 +58,7 @@
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
-        <field name="mark" position="after">
+        <field name="product_serial" position="after">
           <h2>Informations Revendeur</h2>
           <field name="dealer_name"  />
           <field name="dealer_phone" />
