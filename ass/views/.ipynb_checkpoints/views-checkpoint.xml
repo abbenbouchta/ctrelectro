@@ -1,6 +1,6 @@
 <odoo>
   <data>
-
+        <!-- records for the ticket number as a sequence -->
      <record model="ir.ui.view" id="ctr_list">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -8,11 +8,10 @@
       <field name="arch" type="xml">
         <field name="team_id" position="before">
           <field name="sequence" readonly="1"/>
-          <field name="product"/>
-          <field name="mark"/>
         </field>
       </field>
     </record>
+      <!-- records for partner infos -->
     <record model="ir.ui.view" id="sav_partner">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -25,7 +24,20 @@
         </field>
       </field>
     </record>
-      
+      <!-- records for applicant infos -->
+     <record model="ir.ui.view" id="sav_partner">
+      <field name="name">ctr.list</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+        <field name="phone" position="after">
+          <h2>Informations Demandeur</h2>
+          <field name="applicant_name"/>
+          <field name="applicant_phone"/>
+        </field>
+      </field>
+    </record>
+      <!-- records for product infos -->
     <record model="ir.ui.view" id="sav_product">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
