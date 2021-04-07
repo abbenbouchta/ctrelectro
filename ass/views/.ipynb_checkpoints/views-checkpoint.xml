@@ -21,6 +21,8 @@
           <h2>Informations Produit</h2>
           <field name="product"/>
           <field name="mark"/>
+          <field name="product_model" />
+          <field name="product_serial" />
         </field>
       </field>
     </record>
