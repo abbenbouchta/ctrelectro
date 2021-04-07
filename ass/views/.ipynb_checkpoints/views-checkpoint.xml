@@ -11,6 +11,19 @@
         </field>
       </field>
     </record>
+       <!-- records for product infos -->
+    <record model="ir.ui.view" id="sav_product">
+      <field name="name">ctr.list</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+        <field name="email_cc" position="after">
+          <h2>Informations Produit</h2>
+          <field name="product"/>
+          <field name="mark"/>
+        </field>
+      </field>
+    </record>
       <!-- records for partner infos -->
     <record model="ir.ui.view" id="sav_partner">
       <field name="name">ctr.list</field>
@@ -38,7 +51,7 @@
       </field>
     </record>
       <!-- records for dealer infos -->
-     <!-- <record model="ir.ui.view" id="sav_dealer">
+     <record model="ir.ui.view" id="sav_dealer">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
@@ -47,19 +60,6 @@
           <h2>Informations Revendeur</h2>
           <field name="dealer_name"  />
           <field name="dealer_phone" />
-        </field>
-      </field>
-    </record> -->
-      <!-- records for product infos -->
-    <record model="ir.ui.view" id="sav_product">
-      <field name="name">ctr.list</field>
-      <field name="model">helpdesk.ticket</field>
-      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
-      <field name="arch" type="xml">
-        <field name="email_cc" position="after">
-          <h2>Informations Produit</h2>
-          <field name="product"/>
-          <field name="mark"/>
         </field>
       </field>
     </record>
