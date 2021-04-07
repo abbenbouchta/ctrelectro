@@ -25,7 +25,7 @@
       </field>
     </record>
       <!-- records for applicant infos -->
-     <record model="ir.ui.view" id="sav_partner">
+     <record model="ir.ui.view" id="sav_applicant">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
@@ -34,6 +34,19 @@
           <h2>Informations Demandeur</h2>
           <field name="applicant_name"/>
           <field name="applicant_phone"/>
+        </field>
+      </field>
+    </record>
+      <!-- records for dealer infos -->
+     <record model="ir.ui.view" id="sav_dealer">
+      <field name="name">ctr.list</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+        <field name="mark" position="after">
+          <h2>Informations Demandeur</h2>
+          <field name="dealer_name"/>
+          <field name="dealer_phone"/>
         </field>
       </field>
     </record>
