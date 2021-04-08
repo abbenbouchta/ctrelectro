@@ -33,11 +33,12 @@
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
           <field name="timesheet_ids" position="after">
-          <notebook>
-              <page string="Autre Information">
-                  <field name="product_model" />
-              </page>
-          </notebook>
+              <notebook>
+                  <page string="Autre Information">
+                      <field name="product_model" />
+                  </page>
+              </notebook>
+          </field>
       </field>
     </record>
       <!-- records for partner infos -->
