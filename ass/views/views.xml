@@ -27,7 +27,7 @@
       </field>
     </record>
       <!-- records for partner infos -->
-    <record model="ir.ui.view" id="sav_partner">
+    <record model="ir.ui.view" id="sav_client">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
