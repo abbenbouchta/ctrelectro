@@ -26,21 +26,6 @@
         </field>
       </field>
     </record>
-      <!-- records for product infos -->
-    <record model="ir.ui.view" id="sav_infos">
-      <field name="name">ctr.list</field>
-      <field name="model">helpdesk.ticket</field>
-      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
-      <field name="arch" type="xml">
-          <field name="timesheet_ids" position="after">
-              <notebook>
-                  <page string="Autre Information">
-                      <field name="product_model" />
-                  </page>
-              </notebook>
-          </field>
-      </field>
-    </record>
       <!-- records for partner infos -->
     <record model="ir.ui.view" id="sav_partner">
       <field name="name">ctr.list</field>
