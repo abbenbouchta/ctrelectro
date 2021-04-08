@@ -26,19 +26,6 @@
         </field>
       </field>
     </record>
-      
-    <record model="ir.ui.view" id="sav_infos">
-      <field name="name">ctr.list</field>
-      <field name="model">helpdesk.ticket</field>
-      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
-      <field name="arch" type="xml">
-            <xpath expr="//page[@name='timesheets']" position="after">
-                <page string="Autre Information">
-                    <field name="reference" />
-                </page>
-            </xpath>
-      </field>
-    </record>
       <!-- records for partner infos -->
     <record model="ir.ui.view" id="sav_partner">
       <field name="name">ctr.list</field>
