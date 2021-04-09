@@ -30,8 +30,8 @@ class ctr(models.Model):
         return super(ctr, self).create(vals)
     
 class follow_ticket(models.Model):
-    name = 'follow.ticket'
-    description = 'section de suivi de ticket'
+    _name = 'follow.ticket'
+    _description = 'section de suivi de ticket'
     follow_date = fields.Date(string="Date")
     follow_description = fields.Text(string="Description")
     follow = fields.Many2one(comodel_name="helpdesk.ticket")
