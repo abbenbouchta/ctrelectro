@@ -33,5 +33,5 @@ class ctr(models.Model):
 class follow_ticket(models.Model):
     name = "follow.ticket"
     follow_date = fields.Date(string="Date")
-    follow_description = fileds.Text(string="Description")
-    follow = fileds.Many2one(comodel_name="ticket.infos")
+    follow_description = fields.Text(string="Description")
+    follow = fields.Many2one(comodel_name="ticket.infos")
