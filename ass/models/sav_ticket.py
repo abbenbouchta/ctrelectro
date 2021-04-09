@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields , api
-
-class follow_ticket(models.Model):
-    _name = 'follow.ticket'
-    follow_date = fields.Date(string="Date")
-    follow_description = fields.Text(string="Description")
-    follow = fields.Many2one(comodel_name="helpdesk.ticket")
     
 class ctr(models.Model):
     _inherit = 'helpdesk.ticket'
@@ -33,5 +27,11 @@ class ctr(models.Model):
     def create(self, vals):
         vals['sequence'] = self.env['ir.sequence'].next_by_code('sav.ticket')
         return super(ctr, self).create(vals)
+
+class follow_ticket(models.Model):
+    _name = 'follow.ticket'
+    follow_date = fields.Date(string="Date")
+    follow_description = fields.Text(string="Description")
+    follow = fields.Many2one(comodel_name="helpdesk.ticket")
     
 
