@@ -11,6 +11,18 @@
         </field>
       </field>
     </record>
+        <!-- records to complet client infos -->
+     <record model="ir.ui.view" id="client_info">
+      <field name="name">ctr.list</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+        <field name="partner_email" position="before">
+          <field name="client_phone"/>
+          <field name="client_street"/>
+        </field>
+      </field>
+    </record>
        <!-- records for product infos -->
     <record model="ir.ui.view" id="sav_product">
       <field name="name">ctr.list</field>
