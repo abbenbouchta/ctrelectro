@@ -4,7 +4,7 @@ from odoo import models, fields , api
 
 
 class ctr(models.Model):
-    name = "ticket.infos"
+    name = 'ticket.infos'
     _inherit = 'helpdesk.ticket'
     sequence = fields.Char(string="N° ticket", readonly=True, required=True, copy=False, default='New')
     reference=fields.Char(string="Réference")
@@ -22,7 +22,7 @@ class ctr(models.Model):
     mark = fields.Many2one(comodel_name="product.category",string="Marque")
     product_model = fields.Char(string="Modèle Produit")
     product_serial = fields.Char(string="Numéro de serie")
-    follow_ids = fields.One2many(comodel_name="follow.ticket",string="Suivi")
+    follow_ids = fields.One2many("follow.ticket",string="Suivi")
    
 
     @api.model
@@ -31,7 +31,7 @@ class ctr(models.Model):
         return super(ctr, self).create(vals)
     
 class follow_ticket(models.Model):
-    name = "follow.ticket"
+    name = 'follow.ticket'
     follow_date = fields.Date(string="Date")
     follow_description = fields.Text(string="Description")
-    follow = fields.Many2one(comodel_name="ticket.infos")
+    follow = fields.Many2one("ticket.infos")
