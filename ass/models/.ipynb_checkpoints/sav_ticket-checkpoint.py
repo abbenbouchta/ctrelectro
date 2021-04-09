@@ -7,8 +7,8 @@ class ctr(models.Model):
     _inherit = 'helpdesk.ticket'
     sequence = fields.Char(string="N° ticket", readonly=True, required=True, copy=False, default='New')
     reference=fields.Char(string="Réference")
-    client_phone = fields.Char(related="patner_id.phone",string="Téléphone")
-    client_street = fields.Char(related="patner_id.street",string="Adresse")
+    client_phone = fields.Char(related="partner_id.phone",string="Téléphone")
+    client_street = fields.Char(related="partner_id.street",string="Adresse")
     #objet_reclamation=fields.Char(string="Objet de la reclamation")
     #date_reclamation=fields.Date(string="Date de raclamation")
     cust=fields.Many2one(comodel_name="res.partner",string="Partenaire")
