@@ -84,7 +84,12 @@
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
           <field name="description" position="before">            
-              <field name="follow_ids"/>
+              <field name="follow_ids">
+              <tree editable="bottom">
+				 <field name="follow_date" />
+				 <field name="follow_description" />
+			  </tree>
+              </field>
           </field>
       </field>
     </record>
