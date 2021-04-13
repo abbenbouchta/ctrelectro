@@ -77,7 +77,7 @@
         </field>
       </field>
     </record>
-      <!-- records of follows 
+      <!-- records of follows -->
      <record model="ir.ui.view" id="sav_follow">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -92,7 +92,7 @@
               </field>
           </field>
       </field>
-    </record>-->
+    </record>
     <!-- This record is for adding the number of ticket in the tree view -->
     <record model="ir.ui.view" id="ctr_tree_view">
       <field name="name">ctr.search</field>
