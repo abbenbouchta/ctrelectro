@@ -2,7 +2,7 @@
     <data>
         <record model="ir.ui.view" id="sav_autre">
       <field name="name">ctr.list</field>
-      <field name="model">follow.ticket</field>
+      <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
           <field name="description" position="before">
