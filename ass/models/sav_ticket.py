@@ -31,6 +31,7 @@ class ctr(models.Model):
 
 class follow_ticket(models.Model):
     _name = 'follow.ticket'
+    _inherit = 'helpdesk.ticket'
     follow_date = fields.Date(string="Date")
     follow_description = fields.Text(string="Description")
     follow = fields.Many2one(comodel_name="ctr")
