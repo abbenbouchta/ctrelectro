@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sav_autre">
+      <field name="name">ctr.list</field>
+      <field name="model">follow.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+          <field name="description" position="before">
+          <h2>Autre</h2>
+          <field name="follow_date"/>
+          </field>
+      </field>
+    </record>
+    </data>
+</odoo>

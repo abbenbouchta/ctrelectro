@@ -7,6 +7,7 @@
     ],
     "data":[
         'views/views.xml',
+        'views/follow_ticket.xml'
         'views/seq.xml',
     ]
 }
