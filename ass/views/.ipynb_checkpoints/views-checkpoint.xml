@@ -77,7 +77,19 @@
         </field>
       </field>
     </record>
-      <!-- records of follows -->
+      
+    <record model="ir.ui.view" id="sav_autre">
+      <field name="name">ctr.list</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+      <field name="arch" type="xml">
+        <field name="dealer_phone" position="after">
+          <h2>Autre</h2>
+          <field name="follow_date"/>
+        </field>
+      </field>
+    </record>
+      <!-- records of follows 
      <record model="ir.ui.view" id="sav_follow">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -100,7 +112,7 @@
               </form>
           </field>
       </field>
-    </record>
+    </record>-->
     <!-- This record is for adding the number of ticket in the tree view -->
     <record model="ir.ui.view" id="ctr_tree_view">
       <field name="name">ctr.search</field>
