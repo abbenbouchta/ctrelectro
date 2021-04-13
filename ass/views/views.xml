@@ -83,14 +83,20 @@
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
-          <field name="description" position="before">            
-              <field name="follow_ids">
-              <tree editable="bottom">
-				 <field name="follow_date" />
-				 <field name="follow_description" />
-			  </tree>
-              </field>
-          </field>
+          <form>
+              <group>
+                  <notebook>
+                      <page>
+                          <field name="follow_ids">
+                              <tree>
+                                  <field name="follow_date"/>
+                                  <field nmae="follow_description"/>
+                              </tree>
+                          </field>
+                      </page>
+                  </notebook>
+              </group>
+          </form>
       </field>
     </record>
     <!-- This record is for adding the number of ticket in the tree view -->
