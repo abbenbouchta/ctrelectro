@@ -33,6 +33,6 @@ class follow_ticket(models.Model):
     _name = 'follow.ticket'
     follow_date = fields.Date(string="Date")
     follow_description = fields.Text(string="Description")
-    follow = fields.Many2one(comodel_name="sav.help")
+    follow = fields.Many2one(comodel_name="helpdesk.ticket")
     
 
