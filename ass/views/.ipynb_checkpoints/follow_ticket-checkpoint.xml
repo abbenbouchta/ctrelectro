@@ -6,8 +6,12 @@
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
           <field name="description" position="before">
-          <h2>Autre</h2>
-          <field name="follow_date"/>
+              <notebook>
+                  <page string="Autre infos">
+                      <h2>Autre</h2>
+                      <field name="follow_date"/>
+                  </page>
+              </notebook>
           </field>
       </field>
     </record>
