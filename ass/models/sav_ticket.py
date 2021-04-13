@@ -3,6 +3,7 @@
 from odoo import models, fields , api
     
 class ctr(models.Model):
+    _name='sav.help'
     _inherit = 'helpdesk.ticket'
     sequence = fields.Char(string="N° ticket", readonly=True, required=True, copy=False, default='New')
     reference=fields.Char(string="Réference")
@@ -32,6 +33,6 @@ class follow_ticket(models.Model):
     _name = 'follow.ticket'
     follow_date = fields.Date(string="Date")
     follow_description = fields.Text(string="Description")
-    follow = fields.Many2one(comodel_name="helpdesk.ticket")
+    follow = fields.Many2one(comodel_name="sav.help")
     
 
