@@ -9,17 +9,25 @@
               <notebook>
                   <page string="Autre informations">
                       <group>
-                          <separator colspan="2" string="Informations Partenaire" />
-                          <field name="cust"/>
-                          <field name="phone"/>
-                      </group>
-                      <group>
-                          <separator colspan="2" string="Informations Demandeur" />
-                          <field name="applicant_name" />
-                          <field name="applicant_phone" />                        
+                          <group>
+                              <separator colspan="2" string="Informations Partenaire" />
+                              <field name="cust"/>
+                              <field name="phone"/>
+                          </group>
+                          <group>
+                              <separator colspan="2" string="Informations Demandeur" />
+                              <field name="applicant_name" />
+                              <field name="applicant_phone" />                        
+                          </group>
+                          <group>
+                              <separator colspan="2" string="Informations Revendeur" />
+                              <field name="dealer_name"  />
+                              <field name="dealer_phone" />                       
+                          </group>
                       </group>
                   </page>
                   <page string="Suivi">
+                      
                   </page>
               </notebook>
           </field>
