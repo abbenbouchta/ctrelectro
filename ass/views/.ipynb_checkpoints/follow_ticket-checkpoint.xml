@@ -7,12 +7,19 @@
       <field name="arch" type="xml">
           <field name="description" position="before">
               <notebook>
-                  <page string="Autre infos">
-                      <h2>Autre</h2>
-                      <field name="follow_date"/>
-                      <h2>Informations Partenaire</h2>
-                      <field name="cust"/>
-                      <field name="phone"/>
+                  <page string="Autre informations">
+                      <group>
+                          <separator colspan="2" string="Informations Partenaire" />
+                          <field name="cust"/>
+                          <field name="phone"/>
+                      </group>
+                      <group>
+                          <separator colspan="2" string="Informations Demandeur" />
+                          <field name="applicant_name" />
+                          <field name="applicant_phone" />                        
+                      </group>
+                  </page>
+                  <page string="Suivi">
                   </page>
               </notebook>
           </field>
