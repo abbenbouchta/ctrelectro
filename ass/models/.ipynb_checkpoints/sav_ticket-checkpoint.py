@@ -3,7 +3,7 @@
 from odoo import models, fields , api
     
 class ctr(models.Model):
-    _name='sav.help'
+    _name='helpdesk.ticket'
     _inherit = 'helpdesk.ticket'
     sequence = fields.Char(string="N° ticket", readonly=True, required=True, copy=False, default='New')
     reference=fields.Char(string="Réference")
