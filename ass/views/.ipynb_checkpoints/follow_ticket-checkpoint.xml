@@ -10,6 +10,9 @@
                   <page string="Autre infos">
                       <h2>Autre</h2>
                       <field name="follow_date"/>
+                      <h2>Informations Partenaire</h2>
+                      <field name="cust"/>
+                      <field name="phone"/>
                   </page>
               </notebook>
           </field>
