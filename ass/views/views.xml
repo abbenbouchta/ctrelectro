@@ -83,10 +83,8 @@
       <field name="model">follow.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
-        <field name="dealer_phone" position="after">
           <h2>Autre</h2>
           <field name="follow_date"/>
-        </field>
       </field>
     </record>
       <!-- records of follows 
