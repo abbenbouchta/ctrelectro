@@ -27,7 +27,14 @@
                       </group>
                   </page>
                   <page string="Suivi">
-                      
+                      <group>
+                          <field name="follow_ids">
+                              <tree>
+                                  <field name="follow_date" />
+                                  <field name="follow_description" />
+                              </tree>
+                          </field>
+                      </group>
                   </page>
               </notebook>
           </field>
