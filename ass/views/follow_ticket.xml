@@ -28,7 +28,6 @@
                   </page>
                   <page string="Suivi">
                           <field name="follow_ids">
-                              <separator colspan="2" string="Suivi" />
                               <tree editable="bottom">
                                   <field name="follow_date" />
                                   <field name="follow_description" />
