@@ -29,7 +29,7 @@
                   <page string="Suivi">
                       <group>
                           <field name="follow_ids">
-                              <tree>
+                              <tree editable="bottom">
                                   <field name="follow_date" />
                                   <field name="follow_description" />
                               </tree>

@@ -21,7 +21,7 @@ class ctr(models.Model):
     mark = fields.Many2one(comodel_name="product.category",string="Marque")
     product_model = fields.Char(string="Modèle Produit")
     product_serial = fields.Char(string="Numéro de serie")
-    follow_ids = fields.One2many('helpdesk.ticket','follow_relation',string="Suivi")
+    follow_ids = fields.One2many('helpdesk.ticket','follow_relation')
    
 
     @api.model
