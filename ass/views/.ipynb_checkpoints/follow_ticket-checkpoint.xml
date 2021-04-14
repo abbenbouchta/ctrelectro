@@ -27,14 +27,13 @@
                       </group>
                   </page>
                   <page string="Suivi">
-                      <group>
                           <field name="follow_ids">
+                              <separator colspan="2" string="Suivi" />
                               <tree editable="bottom">
                                   <field name="follow_date" />
                                   <field name="follow_description" />
                               </tree>
                           </field>
-                      </group>
                   </page>
               </notebook>
           </field>

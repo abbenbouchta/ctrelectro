@@ -38,7 +38,7 @@
         </field>
       </field>
     </record>
-      <!-- records for partner infos -->
+      <!-- records for partner infos 
     <record model="ir.ui.view" id="sav_client">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -50,8 +50,8 @@
           <field name="phone"/>
         </field>
       </field>
-    </record>
-      <!-- records for applicant infos -->
+    </record>-->
+      <!-- records for applicant infos 
      <record model="ir.ui.view" id="sav_applicant">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -63,8 +63,8 @@
           <field name="applicant_phone" />
         </field>
       </field>
-    </record>
-      <!-- records for dealer infos -->
+    </record>-->
+      <!-- records for dealer infos
      <record model="ir.ui.view" id="sav_dealer">
       <field name="name">ctr.list</field>
       <field name="model">helpdesk.ticket</field>
@@ -76,7 +76,7 @@
           <field name="dealer_phone" />
         </field>
       </field>
-    </record>
+    </record> -->
       
     
       <!-- records of follows 
