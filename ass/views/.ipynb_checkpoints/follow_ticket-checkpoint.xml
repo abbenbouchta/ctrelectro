@@ -14,6 +14,7 @@
                               <field name="cust"/>
                               <field name="phone"/>
                               <field name="client_street"/>
+                              <field name ="partner_sale_order" />
                           </group>
                           <group>
                               <separator colspan="2" string="Informations Demandeur" />

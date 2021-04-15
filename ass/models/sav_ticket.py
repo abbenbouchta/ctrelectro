@@ -11,7 +11,7 @@ class ctr(models.Model):
     client_street = fields.Char(related="cust.street",string="Adresse")
     #objet_reclamation=fields.Char(string="Objet de la reclamation")
     #date_reclamation=fields.Date(string="Date de raclamation")
-    cust=fields.Many2one(comodel_name="res.partner",string="Consumateur")
+    cust=fields.Many2one(comodel_name="res.partner",string="Consomateur")
     phone = fields.Char(related="cust.phone",string="Téléphone")
     applicant_name = fields.Many2one(comodel_name="res.partner",string="Demandeur")
     applicant_phone = fields.Char(related="applicant_name.phone",string="Téléphone")
@@ -22,6 +22,7 @@ class ctr(models.Model):
     product_model = fields.Char(string="Modèle Produit")
     product_serial = fields.Char(string="Numéro de serie")
     follow_ids = fields.One2many('helpdesk.ticket','follow_relation')
+    partner_sale_order = fields.Many2one(comodel_name="sale.order",string="Bon de commande")
    
 
     @api.model
