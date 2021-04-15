@@ -10,9 +10,10 @@
                   <page string="Autre informations">
                       <group>
                           <group>
-                              <separator colspan="2" string="Informations Partenaire" />
+                              <separator colspan="2" string="Informations Client" />
                               <field name="cust"/>
                               <field name="phone"/>
+                              <field name="client_street"/>
                           </group>
                           <group>
                               <separator colspan="2" string="Informations Demandeur" />
