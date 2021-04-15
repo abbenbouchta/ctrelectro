@@ -29,6 +29,7 @@
       <field name="arch" type="xml">
         <field name="partner_email" position="before">
           <field name="client_phone"/>
+          <field name ="partner_sale_order" />
           <!-- <field name="client_street"/> -->
         </field>
       </field>
