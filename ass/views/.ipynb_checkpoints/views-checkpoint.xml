@@ -46,6 +46,8 @@
           <field name="mark"/>
           <field name="product_model" />
           <field name="product_serial" />
+          <field name="product_purchase_date" />
+          <field name="product_purchase_order" />
         </field>
       </field>
     </record>

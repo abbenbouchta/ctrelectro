@@ -23,6 +23,8 @@ class ctr(models.Model):
     product_serial = fields.Char(string="Numéro de serie")
     follow_ids = fields.One2many('helpdesk.ticket','follow_relation')
     partner_sale_order = fields.Many2one(comodel_name="sale.order",string="Bon de commande")
+    product_purchase_order = fields.Binary(string="Bon d'achat")
+    product_purchase_date = fields.Date(string="Date d'achat")
    
 
     @api.model
